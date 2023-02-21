@@ -1,0 +1,55 @@
+@use "../../styles/colors" as color;
+@use "../../styles/breakpoints" as *;
+
+.images_grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+
+  > img {
+    width: 9rem;
+    height: 9rem;
+
+    object-fit: cover; 
+
+    padding: 0.3rem;
+  }
+
+  @include sm {
+    margin-bottom: 2rem;
+
+
+    max-width: 36rem;
+
+    > img {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+
+  @include md {
+    width: 80%;
+
+    gap: 2rem;
+
+    > img {
+      width: 14rem;
+      height: 14rem;
+    }
+  }
+
+  @include lg {
+    max-width: 50rem;
+  }
+
+  @include xl {
+        > img {
+      width: 20rem;
+      height: 20rem;
+    }
+    max-width: 75rem;
+  }
+}

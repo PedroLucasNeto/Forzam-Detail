@@ -1,0 +1,62 @@
+@use "../../styles/colors" as color;
+@use "../../styles/breakpoints" as *;
+
+
+.services_container {
+  background-color: rgba(color.$blue-900, 0.1);
+
+  // padding: 1rem 2rem;
+
+  .swiper {
+    padding: 1rem;
+  }
+
+  .swiper-pagination {
+    margin-top: 5rem;
+  }
+
+  .swiper-button-prev {
+    color: color.$orange-500;
+    display: none;
+  }
+  .swiper-button-prev::after {
+    font-size: 2.5rem;
+  }
+
+  .swiper-button-next {
+    color: color.$orange-500;
+    display: none;
+  }
+
+  .swiper-button-next::after {
+    font-size: 2.5rem;
+  }
+
+  @include sm {
+    .swiper-button-prev {
+      display: block;
+    }
+    .swiper-button-next {
+
+      display: block;
+
+    }
+  }
+}
+
+
+
+
+.services_container {
+  .swiper {
+    .swiper-pagination {
+      .swiper-pagination-bullet {
+        background-color: rgba(color.$blue-50, 1);
+        padding: 0.3rem;
+      }
+      }
+    }
+}
+
+
+

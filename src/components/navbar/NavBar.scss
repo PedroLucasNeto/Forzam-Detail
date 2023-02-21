@@ -1,0 +1,50 @@
+@use "../../styles/breakpoints" as *;
+@use "../../styles/colors" as color;
+
+
+.navbar {
+  position: fixed;
+  top: -2.2rem;
+  left: 0;
+
+  z-index: 4;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  width: 100%;
+
+  padding: 1.5rem;
+
+  margin-top: 7.1rem;
+
+
+  border-bottom: 2px solid rgba(color.$blue-900, 0.9);
+  background-color: rgba(color.$blue-900, 0.1);
+  backdrop-filter: blur(4px);
+
+  transform: translateY(-16rem);
+  transition: all 0.3s ease-in-out;
+
+  > li {
+    padding: 0.25rem;
+    color: color.$blue-50;
+  }
+
+  > li > a {
+    color: color.$blue-50;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  @include sm {
+    display: none;
+  }
+}
+
+.opened {
+  transform: translateY(0);
+}

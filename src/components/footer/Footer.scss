@@ -1,0 +1,42 @@
+@use "../../styles/colors" as color;
+@use "../../styles/breakpoints" as *;
+
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2rem 2rem;
+  background-color: rgba(color.$black-900, 0.5);
+
+}
+
+.footer_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.text_space {
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  color: white;
+}
+
+.text_space .color {
+  color: color.$orange-500;
+
+  &:hover {
+    color: white;
+  }
+}

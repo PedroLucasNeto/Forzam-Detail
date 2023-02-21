@@ -1,0 +1,29 @@
+@use "../../styles/breakpoints" as *;
+@use "../../styles/colors" as color; 
+
+
+.process_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(color.$blue-50, 0.9);
+
+  gap: 2rem;
+
+  padding: 2rem;
+
+  @include md {
+    flex-direction: row;
+  }
+
+}
+
+
+.process_card {
+  height: 15rem;
+  width: 15rem;
+
+  border: 0.2rem solid color.$blue-50;
+}

@@ -1,0 +1,57 @@
+@use "../../styles/breakpoints" as *;
+@use "../../styles/colors" as color;
+
+.galery_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10rem 1rem;
+
+  flex-direction: column;
+
+  background-color: rgba(color.$blue-900,0.1) ;
+}
+
+.title_box {
+  padding: 2rem;
+  > h1 {
+    color: color.$orange-500;
+    text-align: center;
+  }
+}
+
+
+.swiper {
+  width: 100%;
+  padding: 1rem;
+
+}
+
+.swiper-button-prev {
+  color: color.$orange-500;
+
+}
+.swiper-button-prev::after {
+  font-size: 2.5rem;
+}
+
+.swiper-button-next {
+  color: color.$orange-500;
+
+}
+
+.swiper-button-next::after {
+  font-size: 2.5rem;
+}
+
+@include sm {
+  .swiper-button-prev {
+    display: block;
+  }
+  .swiper-button-next {
+
+    display: block;
+
+  }
+}
