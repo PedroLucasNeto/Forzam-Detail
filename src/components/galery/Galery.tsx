@@ -24,10 +24,9 @@ const Galery = () => {
           delay: 3000,
           disableOnInteraction: false,
         }}
-        className=""
       >
         {projects.map((project, index) => (
-          <SwiperSlide key={index} className="">
+          <SwiperSlide key={index}>
             <ProjectGrid project={project} />
           </SwiperSlide>
         ))}
