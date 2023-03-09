@@ -6,6 +6,7 @@ import Services from "../../services_section/Services";
 import Galery from "../../galery/Galery";
 import ForzamArt from "../../forzam_art/ForzamArt";
 import ProcessSection from "../../process_section/ProcessSection";
+import CallToAction from "../../cta/CallToAction";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       </section>
       <Services />
       <Galery />
+      <CallToAction />
       <ForzamArt />
       <About />
       <Contact />

@@ -1,7 +1,6 @@
 @use "../../styles/breakpoints" as *;
 @use "../../styles/colors" as color;
 
-
 .forzam_art {
   display: flex;
   align-items: center;
@@ -17,19 +16,16 @@
     width: 4rem;
   }
 
-  height: 20rem;
+  min-height: 12rem;
 
   @include md {
     background-attachment: fixed;
     background-size: auto;
 
     background-size: cover;
-
-    height: 15rem;
   }
 
   @include lg {
     height: 20rem;
   }
-
 }

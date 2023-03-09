@@ -17,9 +17,6 @@ const About = () => {
           melhor em termos de detalhamentos automotivo, garantindo
           profissionalismo, dedicação, atenção, cuidado e limpeza.
         </p>
-        <p>
-          Entre em contato conosco hoje mesmo para agendar seu detalhamento!
-        </p>
       </div>
       <img src="/assets/img/about_us.jpg" alt="" />
     </section>

@@ -10,7 +10,7 @@
 
   flex-direction: column;
 
-  background-color: rgba(color.$blue-900,0.1) ;
+  background-color: rgba(color.$blue-900, 0.1);
 }
 
 .title_box {
@@ -19,18 +19,20 @@
     color: color.$orange-500;
     text-align: center;
   }
+  @include md {
+    > h1 {
+      font-size: 2rem;
+    }
+  }
 }
-
 
 .swiper {
   width: 100%;
   padding: 1rem;
-
 }
 
 .swiper-button-prev {
   color: color.$orange-500;
-
 }
 .swiper-button-prev::after {
   font-size: 2.5rem;
@@ -38,7 +40,6 @@
 
 .swiper-button-next {
   color: color.$orange-500;
-
 }
 
 .swiper-button-next::after {
@@ -50,8 +51,6 @@
     display: block;
   }
   .swiper-button-next {
-
     display: block;
-
   }
 }

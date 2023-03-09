@@ -1,0 +1,64 @@
+@use "../../styles/breakpoints" as *;
+@use "../../styles/colors" as color;
+
+.cta_section {
+  background-color: rgba(color.$blue-900, 0.1);
+
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 4rem;
+  padding-bottom: 15rem;
+}
+
+.cta_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+
+  gap: 1.5rem;
+
+  // max-width: ;
+  > h2 {
+    color: color.$orange-500;
+  }
+  > p {
+    color: color.$blue-50;
+  }
+
+  > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: color.$blue-50;
+    background-color: color.$orange-700;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.2rem;
+
+    &:hover {
+      background-color: color.$orange-800;
+    }
+  }
+
+  @include md {
+    max-width: 30rem;
+
+    > h2 {
+      font-size: 2.3rem;
+    }
+    > p {
+      font-size: 1.2rem;
+    }
+  }
+
+  @include xl {
+    width: 30%;
+  }
+}

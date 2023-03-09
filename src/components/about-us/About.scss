@@ -9,7 +9,7 @@
 
   background-color: rgba(color.$blue-900, 0.1);
 
-  padding: 2rem;
+  padding: 6rem 2rem;
 
   > img {
     object-fit: cover;
@@ -34,7 +34,6 @@
     > img {
       max-width: 25rem;
       max-height: 30rem;
-
     }
   }
 }
@@ -42,7 +41,7 @@
 .description_box {
   display: flex;
   flex-direction: column;
-  
+
   padding: 2rem;
 
   > h2 {
@@ -60,8 +59,8 @@
   }
 
   @include md {
-    max-width: 30rem;
-    
+    max-width: 37rem;
+
     > P {
       text-align: left;
     }
