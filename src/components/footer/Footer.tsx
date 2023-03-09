@@ -6,7 +6,7 @@ const Footer = () => {
     <div className="footer_container">
       <span className="text_space">
         Desenvolvido por
-        <a href="https://codingforfree.netlify.com" target={"_blank"}>
+        <a href="https://codingforfree.tech" target={"_blank"}>
           <span className="text_space color"> Coding For Free</span>
         </a>
       </span>

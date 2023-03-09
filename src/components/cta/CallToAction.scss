@@ -44,6 +44,7 @@
 
     &:hover {
       background-color: color.$orange-800;
+      color: color.$orange-500;
     }
   }
 
@@ -59,6 +60,6 @@
   }
 
   @include xl {
-    width: 30%;
+    width: 50%;
   }
 }

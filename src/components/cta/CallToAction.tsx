@@ -7,7 +7,7 @@ const CallToAction = () => {
         <h2>Seu veículo novo de novo!</h2>
         <p>
           Aguardamos sua visita! Entre em contato conosco através dos canais de
-          atendimento saiba mais sobre nossos serviços!
+          atendimento e saiba mais sobre nossos serviços!
         </p>
         <a href="#contact_section">Details</a>
       </div>
